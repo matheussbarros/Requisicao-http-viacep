@@ -30,9 +30,7 @@ public class HttpService extends AsyncTask<Void, Void, JSONObject> {
 
 
         try {
-            URL url = new URL("http://ws.matheuscastiglioni.com.br/ws/cep/find/" + this.cep + "/json/");
-
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            HttpURLConnection connection = (HttpURLConnection) pesquisaCep.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Content-type", "application/json");
             connection.setRequestProperty("Accept", "application/json");
@@ -41,7 +39,7 @@ public class HttpService extends AsyncTask<Void, Void, JSONObject> {
             connection.connect();
 
 
-            Scanner scanner = new Scanner(url.openStream());
+            Scanner scanner = new Scanner(pesquisaCep.openStream());
             while (scanner.hasNext()) {
                 resposta.append(scanner.next());
             }

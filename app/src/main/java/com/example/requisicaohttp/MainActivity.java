@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
                                 retorno.getString("logradouro"),
                                 retorno.getString("complemento"),
                                 retorno.getString("bairro"),
-                                retorno.getString("cidade"),
-                                retorno.getString("estado")
+                                retorno.getString("localidade"),
+                                retorno.getString("uf")
                         );
                         resposta.setText(cep.toString());
                     }else{

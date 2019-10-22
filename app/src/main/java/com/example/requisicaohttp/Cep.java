@@ -73,7 +73,7 @@ public class Cep {
                 + "\nLogradouro: " + getLogradouro()
                 + "\nComplemento: " + getComplemento()
                 + "\nBairro: " + getBairro()
-                + "\nCidade:" + getCidade()
+                + "\nCidade: " + getCidade()
                 + "\nEstado: " + getEstado();
     }
 
